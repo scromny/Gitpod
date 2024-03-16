@@ -1,0 +1,142 @@
+.hero {
+    .container {
+        max-width: 1370px;
+        width: 100%;
+        padding: 32px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+    }
+}
+
+.hero__left--heading {
+    font-size: 80px;
+    color: #12100C;
+    margin: 0;
+}
+
+.hero__left--texts {
+    margin: 20px 0;
+}
+
+.hero__left--text {
+    font-size: 23px;
+    line-height: 31.92px;
+    color: #12100CB2;
+    margin: 0;
+}
+
+.hero__left--box {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .hero__left--btn {
+        font-family: "Roboto";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 23px;
+        color:#12100C;
+        background-color: #FFAE33;
+        border: 1px solid #FFAE33;
+        border-radius: 10px;
+        padding: 10px 40px;
+        cursor: pointer;
+        transition: 0.3s all linear;
+
+        &:hover {
+            color: #FFAE33;
+            background-color: #F5F3F4;
+        }
+    }
+
+    .hero__left--span {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 10px;
+        color: #12100C;
+    }
+}
+
+.hero__left--imgbox {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 12px 0 0 5px;
+}
+
+@media screen and (max-width: 1246px) {
+    .hero__left--heading {
+        font-size: 55px;
+    }
+    .hero__left--text {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+    .hero__left--box {
+        gap: 14px;
+    
+        .hero__left--btn {
+            font-size: 14px;
+            padding: 7px 30px;
+        }
+    
+        .hero__left--span {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .hero__left--imgbox {
+        gap: 14px;
+        .hero__left--img {
+            width: 22px;
+        }
+    }
+
+    .Hero__img {
+        width: 500px;
+    }
+}
+@media screen and (max-width: 950px) {
+    .hero__left--heading {
+        font-size: 45px;
+    }
+    .hero__left--text {
+        font-size: 12px;
+    }
+    .hero__left--box {
+        gap: 12px;
+    
+        .hero__left--btn {
+            font-size: 12px;
+            padding: 5px 20px;
+        }
+
+        .hero__left--span {
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+    }
+    .hero__left--imgbox {
+        .hero__left--img {
+            width: 17px;
+        }
+    }
+
+    .Hero__img {
+        width: 420px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .hero {
+        .container {
+            flex-direction: column-reverse;
+        }
+    }
+}

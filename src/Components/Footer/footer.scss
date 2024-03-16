@@ -1,0 +1,128 @@
+.footer {
+    background-color: #f9f9f9;
+    margin-top: 100px;
+    .container {
+        max-width: 1370px;
+        width: 100%;
+        padding: 0 200px;
+        margin: auto;
+    }
+}
+
+.footer__boxes {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 48px 0;
+    padding: 20px 0;
+}
+
+.footer__links {
+    width: 130px;
+    .footer__link--h {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 20px;
+    }
+    .footer__link {
+        display: block;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #12100cb2;
+        text-decoration: none;
+        margin-bottom: 5px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .zvyozdcka {
+        background-image: url(../Lib/img/_.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+.footer__bottom {
+    border-top: 1.7px solid #ece7e5;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__bottom--left {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    .footer__lrft--text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #12100cb2;
+    }
+}
+
+.footer__bottom--right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .footer__right--img {
+        cursor: pointer;
+    }
+}
+.footer__minbox {
+    background-color: #ece7e5;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .footer__minbox--text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: #12100cb2;
+        .privacypolicy {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+    .footer__minbox--btn {
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 10px;
+        background-color: #F9F9F9;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .footer {
+        .container {
+            padding: 0 100px;
+        }
+    }
+    .footer__boxes {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer {
+        .container {
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer__minbox {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .footer__boxes {
+        display: ruby;
+    }
+}
